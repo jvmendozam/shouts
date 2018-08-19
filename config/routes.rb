@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   resources :passwords, controller: "clearance/passwords", only: [:create, :new]
   resource :session, only: [:create]
 
+  resources :hashtags, only: [:show]
+
   resources :shouts, only: [:show] do
     member do
       post "like" => "likes#create"

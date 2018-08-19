@@ -7,4 +7,5 @@ class Shout < ApplicationRecord
 
   delegate :username, to: :user
 
+
 end
