@@ -7,5 +7,4 @@ class Shout < ApplicationRecord
 
   delegate :username, to: :user
 
-  default_scope { order(created_at: :desc)}
 end
