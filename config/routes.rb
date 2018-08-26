@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   
   resources :passwords, controller: "clearance/passwords", only: [:create, :new]
   resource :session, only: [:create]
-
+  resource :search, only: [:show]
   resources :hashtags, only: [:show]
 
   resources :shouts, only: [:show] do
